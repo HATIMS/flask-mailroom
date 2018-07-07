@@ -20,6 +20,8 @@ charlie = Donor(name="Charlie")
 charlie.save()
 
 donors = [alice, bob, charlie]
+for d in donors:
+    print(d)
 
 for x in range(30):
     Donation(donor=random.choice(donors), value=random.randint(100, 10000)).save()
